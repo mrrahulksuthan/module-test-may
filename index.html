@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student Data</h1>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search by name or email">
+        <button id="search-button">Search</button>
+      </div>
+      <div class="table-container">
+        <table id="student-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Class</th>
+              <th>Marks</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="student-table-body">
+            <!-- table rows will be dynamically generated here -->
+          </tbody>
+        </table>
+        <div id="gender-table-container" class="hidden">
+          <h2>Female Students</h2>
+          <table id="female-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Class</th>
+                <th>Marks</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="female-table-body">
+              <!-- female student table rows will be dynamically generated here -->
+            </tbody>
+          </table>
+          <h2>Male Students</h2>
+          <table id="male-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Class</th>
+                <th>Marks</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="male-table-body">
+              <!-- male student table rows will be dynamically generated here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="button-container">
+        <button id="sort-az-button">Sort A-Z</button>
+        <button id="sort-za-button">Sort Z-A</button>
+        <button id="sort-marks-button">Sort by Marks</button>
+        <button id="sort-passing-button">Sort by Passing</button>
+        <button id="sort-class-button">Sort by Class</button>
+        <button id="sort-gender-button">Sort by Gender</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
